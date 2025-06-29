@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo.png" width="50" height="50" class="d-inline-block rounded-circle align-text-top me-2">
+        My Smart Profile
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="fun.html">Fun</a></li>
+          <li class="nav-item"><a class="nav-link" href="smart.html">Smart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container my-5">
+   
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+      <h2 class="text-primary mb-0">Smart Interaction</h2>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="themeToggle">
+        <label class="form-check-label" for="themeToggle" id="themeLabel">Light Mode</label>
+      </div>
+    </div>
+
+    
+    <div class="p-4 mb-4 bg-surface rounded custom-shadow thick-border">
+      <h4 class="text-accent">Live Greeting</h4>
+      <div class="mb-3">
+        <label for="userName" class="form-label">Enter Your Name in the Box below</label>
+        <input type="text" class="form-control" id="userName" placeholder="Type your name...">
+      </div>
+      <div id="liveGreeting" class="alert alert-info mt-3 livegreeting" style="display: none;">
+        Welcome!
+        I’m really excited to hear from you!, <span id="greetName"></span>!
+      </div>
+    </div>
+
+    
+    <div class="p-4 mb-4 bg-surface rounded custom-shadow thick-border">
+      <h4 class="text-accent">Click to Reveal a Smart Surprise</h4>
+      <button id="fadeTipBtn" class="btn btn-smart mb-3">Show Surprise</button>
+      <div id="smartTipBox" class="border p-3 rounded text-center" style="display: none;">
+        <strong>Smart Surprise:</strong> JavaScript can make your websites come alive!
+      </div>
+    </div>
+
+    
+    <div class="p-4 bg-surface rounded custom-shadow thick-border">
+      <h4 class="text-accent">Hover Over This Box</h4>
+      <div id="outputBox" class="border p-3 rounded" style="min-height: 100px;">
+        <em>This box will change color when you hover over it.</em>
+      </div>
+    </div>
+  </section>
+  <!-- Bootstrap and JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
