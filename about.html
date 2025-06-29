@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+<script src="script.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo.png" width="50" height="50" class="d-inline-block rounded-circle align-text-top me-2">
+        My Smart Profile
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="fun.html">Fun</a></li>
+          <li class="nav-item"><a class="nav-link" href="smart.html">Smart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+      <h2 id="aboutTitle" class="text-primary mb-0">About Me</h2>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="themeToggle">
+        <label class="form-check-label" for="themeToggle" id="themeLabel">Light Mode</label>
+      </div>
+    </div>
+    <section class="container my-5">
+
+
+      <div class="row g-4">
+        <!-- Left Column: Biography + Hobbies -->
+        <div class="col-12 col-md-8">
+          <div class="p-4 bg-surface rounded custom-shadow thick-border">
+            <h4 class="text-accent">Biography</h4>
+            <p>
+              I am a self-motivated individual IT professional specializing in networking and seeking to leverage
+              programming skills and hands-on experience with digital and networking technologies and
+              I'm currently pursuing my master's degree in computer scince. I enjoy exploring technology, building
+              personal projects and exploring new technologies.
+            </p>
+
+            <h4 class="text-accent mt-4">Hobbies</h4>
+            <ul>
+              <li>Reading books</li>
+              <li>I enjoy running and walking</li>
+              <li>I enjoy eating a lot and trying new types of food whenever I can.</li>
+              <li>Playing Video Games to relieve stress</li>
+            </ul>
+            <!-- Show More Buttons -->
+            <div class="mb-4">
+              <button id="showMoreBtn" class="btn btn-outline-primary btn-smart">Show More</button>
+            </div>
+            <div id="moreContent" class="mt-3 d-none">
+              <p style="line-height: 2;">
+                Fun fact about me:<br><br>
+                I don't read books...<br><br><br>
+                I listen to them like a podcast with plot twists!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Personal Goals -->
+        <div class="col-12 col-md-4">
+          <div class="p-4 bg-surface rounded custom-shadow thick-border h-100">
+            <h4 class="text-accent">Personal Goals</h4>
+            <p>
+              <strong>Short-term goal:</strong><br>
+              My short-term goal is to finish my master’s degree and start building a strong portfolio that reflects who
+              I am and what I’m passionate about.<br>
+              I want to keep learning, growing, and gaining hands-on experience that moves me closer to my
+              dream.<br><br>
+
+              <strong>Long-term goal:</strong><br>
+              In the long run, I hope to build a career that blends creativity, purpose, and impact.<br>
+              I want to do what I love, explore new challenges, and have the chance to prove myself and grow in a field
+              that truly excites me.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>
